@@ -2,6 +2,7 @@ import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
+import 'package:social_prokit/services/api/HttpRequest.dart';
 import 'package:social_prokit/utils/SocialColors.dart';
 import 'package:social_prokit/utils/SocialConstant.dart';
 import 'package:social_prokit/utils/SocialStrings.dart';
@@ -71,6 +72,7 @@ class SocialSignInState extends State<SocialSignIn> {
                         SocialAppButton(
                           onPressed: () {
                             SocialDashboard().launch(context);
+                            login('d', '1');
                           },
                           textContent: social_lbl_continue,
                         ),
